@@ -5,7 +5,7 @@ class Keylightctl < Formula
 
   on_macos do
     url "https://github.com/endocrimes/keylightctl/releases/download/0.0.3/keylightctl_0.0.3_Darwin_x86_64.tar.gz"
-    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+    sha256 "062948712ccbc995cdaefbd1242b7b5ece7807de8aed8ad775d7466c5c72d5e1"
   end
 
   def install
