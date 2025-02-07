@@ -1,15 +1,17 @@
 class Keylightctl < Formula
   desc "Command line tool for controlling Elgato Key Light devices"
   homepage "https://github.com/endocrimes/keylightctl"
-  version "0.0.3"
+  version "v0.0.3"
 
-  on_macos do
-    url "https://github.com/endocrimes/keylightctl/releases/download/0.0.3/keylightctl_0.0.3_Darwin_x86_64.tar.gz"
-    sha256 "062948712ccbc995cdaefbd1242b7b5ece7807de8aed8ad775d7466c5c72d5e1"
+  if OS.mac?
+    url "https://github.com/endocrimes/keylightctl/archive/refs/tags/0.0.3.tar.gz" # Update URL with the latest release
+    sha256 "7fd78d3b5253af0750c2efbc58c0cd5895378e2e0c4cf22e07b0d90dad09a646"
   end
 
+  depends_on "go" => :build
+
   def install
-    bin.install "keylightctl"
+    system "go", "build", *std_go_args(ldflags: "-s -w")
   end
 
   test do
