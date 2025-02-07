@@ -1,11 +1,11 @@
 class Keylightctl < Formula
   desc "Command line tool for controlling Elgato Key Light devices"
-  homepage "https://github.com/endocrimes/keylightctl"
-  version "0.0.3"
+  homepage "https://github.com/eckertalex/keylightctl"
+  version "0.1.0"
   
   on_macos do	
-    url "https://github.com/endocrimes/keylightctl/releases/download/0.0.3/keylightctl_0.0.3_Darwin_x86_64.tar.gz"
-    sha256 "062948712ccbc995cdaefbd1242b7b5ece7807de8aed8ad775d7466c5c72d5e1"
+    url "https://github.com/eckertalex/keylightctl/releases/download/v0.1.0/keylightctl_Darwin_all.tar.gz"
+    sha256 "df77663e5e32c0e9ec485417b8a2c02adb622bef925d6e2c5939ebf3ada7b8b2"
   end
   
   def install
